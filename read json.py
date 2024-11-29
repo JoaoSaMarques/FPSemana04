@@ -1,9 +1,7 @@
 import json
 import sys
 
-with open("read.json", 'r') as file:
-    data = json.load(file)
-
-content = json.loads(file)
-
-file.close()
+def read_json(file_path):
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+        print(data)
