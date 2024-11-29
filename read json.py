@@ -1,5 +1,9 @@
-file = open("data.json", "rt")
+import json
+import sys
 
-first_line = file.readlines()
+with open("read.json", 'r') as file:
+    data = json.load(file)
+
+content = json.loads(file)
 
 file.close()
